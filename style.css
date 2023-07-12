@@ -1,0 +1,171 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --fc-primary: #E1E1E6;
+    --fc-secondary: #8D8D99;
+    --fc-bg: #037496;
+    --ff-primary: 'Roboto Slab', serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+#nav-bar {
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4.3rem;
+
+    padding: 4rem 7.2rem;
+}
+
+.home {
+    background: url('./assets/mountains-universe-1.png') no-repeat center fixed;
+    background-size: cover;
+}
+
+.universe {
+    background: url('./assets/mountains-universe-2.png') no-repeat center fixed;
+    background-size: cover;
+}
+
+.exploration {
+    background: url('/assets/mountains-universe-3.png') no-repeat center fixed;
+    background-size: cover;
+}
+
+.nav-title {
+    font-family: var(--ff-primary);
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    color: var(--fc-secondary);
+    text-decoration: none;
+
+    transition: all .2s;
+}
+
+img {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.nav-title:hover {
+    color: var(--fc-primary);
+
+    transition: ease-in-out .2s;
+}
+
+.home-wrap {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    margin-top: -14rem;
+}
+
+.main-wrap  {
+    padding: 6.2rem 10.2rem;
+    max-width: 75rem;
+}
+
+h1.title {
+    font-family: var(--ff-primary);
+    font-size: 4.8rem;
+    color: var(--fc-primary);
+    font-weight: bold;
+
+    margin-bottom: 2.4rem;
+}
+
+h1.title.universe {
+    transition: all ease-in-out .3s;
+}
+
+h1.title.universe:hover {
+    opacity: 0.6;
+}
+
+.paragraph {
+    font-family: var(--ff-primary);
+    font-size: 1.8rem;
+    color: var(--fc-primary);
+}
+.paragraph.error {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input {
+    align-items: center;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    padding: 1.2rem 3.2rem;
+    color: var(--fc-primary);
+
+    background: transparent;
+    border: 2px solid var(--fc-primary);
+    border-radius: 9999rem;
+
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+input:hover {
+    background: var(--fc-primary);
+    color: var(--fc-bg);
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+  }
+
+@media(max-width: 620px) {
+    .nav-title {
+        font-size: clamp(1.2rem, 1.4rem + 2vw, 2rem);
+    }
+    #nav-bar {
+        place-content: center;
+        align-items: center;
+        gap: 1.4rem;
+        padding: 3rem 3.6rem;
+    }
+    h1.title {
+        font-size: 3.6rem;
+    }
+    .paragraph {
+        font-size: 1.5rem;
+    }
+    img {
+        max-width: 4rem;
+    }
+
+    input {
+        line-height: 1.6rem;
+        padding: .8rem 2.6rem;
+      }
+}
