@@ -27,7 +27,6 @@ router.add(404, '/pages/404.html');
 
 router.handle();
 
-
 window.onpopstate = router.handle();
 
-window.route = () => router.route();
+window.route = (href) => router.route(href);

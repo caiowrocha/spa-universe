@@ -7,12 +7,12 @@ export class Router {
     };
 
 
-    route(event) {
+    route(href, event) {
         event = event || window.event;
 
         event.preventDefault();
 
-        window.history.pushState({}, '', event.target.href);
+        window.history.pushState({}, '', href);
 
         this.handle();
     };
