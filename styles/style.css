@@ -32,17 +32,17 @@ body {
 }
 
 .home {
-    background: url('./assets/mountains-universe-1.png') no-repeat center fixed;
+    background: url('../assets/mountains-universe-1.png') no-repeat center fixed;
     background-size: cover;
 }
 
 .universe {
-    background: url('./assets/mountains-universe-2.png') no-repeat center fixed;
+    background: url('../assets/mountains-universe-2.png') no-repeat center fixed;
     background-size: cover;
 }
 
 .exploration {
-    background: url('/assets/mountains-universe-3.png') no-repeat center fixed;
+    background: url('../assets/mountains-universe-3.png') no-repeat center fixed;
     background-size: cover;
 }
 
