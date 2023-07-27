@@ -1,4 +1,4 @@
-# 🧑‍🚀 ![Explore the Universe!](https://spa-universe-ten-rosy.vercel.app/)
+# 🧑‍🚀 [Explore the Universe!](https://spa-universe-ten-rosy.vercel.app/)
 
 > <img src="./design/explore-thumbnail.png" width="550" />
 
