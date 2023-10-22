@@ -1,6 +1,6 @@
 # 🧑‍🚀 [Explore the Universe!](https://spa-universe-ten-rosy.vercel.app/)
 
-> <img src="./design/explore-thumbnail.png" width="550" />
+<img src="./design/explore-thumbnail.png" width="550" />
 
 
 ## Table of Contents
@@ -27,4 +27,4 @@
 
 - Design: [Rocketseat](https://www.rocketseat.com.br/)
 
-- Code: ![Caio Rocha](https://github.com/Invocador)
+- Code: [Caio Rocha](https://github.com/Invocador)
